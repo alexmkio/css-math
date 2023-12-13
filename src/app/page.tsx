@@ -1,3 +1,5 @@
+import styles from "./page.module.css";
+
 export default function Home() {
   return (
     <>
@@ -29,7 +31,10 @@ export default function Home() {
               </a>
             </dt>
             <dd>
-              <p>Performs basic arithmetic calculations on numerical values.</p>
+              <p>
+                Performs basic arithmetic calculations on numerical values.{" "}
+                <a href="/calc/">Examples</a>
+              </p>
             </dd>
           </dl>
         </div>
@@ -44,7 +49,10 @@ export default function Home() {
               </a>
             </dt>
             <dd>
-              <p>Calculates the smallest of a list of values.</p>
+              <p>
+                Calculates the smallest of a list of values.{" "}
+                <a href="/min/">Examples</a>
+              </p>
             </dd>
             <dt>
               <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max">
@@ -52,7 +60,10 @@ export default function Home() {
               </a>
             </dt>
             <dd>
-              <p>Calculates the largest of a list of values.</p>
+              <p>
+                Calculates the largest of a list of values.{" "}
+                <a href="/max/">Examples</a>
+              </p>
             </dd>
             <dt>
               <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">
@@ -61,8 +72,10 @@ export default function Home() {
             </dt>
             <dd>
               <p>
-                Calculates the central of a minimum, central, and maximum
-                values.
+                clamps a middle value within a range of values between a defined
+                minimum bound and a maximum bound. The function takes three
+                parameters: a minimum value, a preferred value, and a maximum
+                allowed value. <a href="/clamp/">Examples</a>
               </p>
             </dd>
           </dl>
@@ -223,28 +236,31 @@ export default function Home() {
           </dl>
         </div>
       </section>
-      <section>
-        <h3>Sign-related functions</h3>
-        <div>
-          <dl>
-            <dt>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/abs">
-                <code>abs()</code>
-              </a>
-            </dt>
-            <dd>
-              <p>Calculates the absolute value of a number.</p>
-            </dd>
-            <dt>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sign">
-                <code>sign()</code>
-              </a>
-            </dt>
-            <dd>
-              <p>Calculates the sign (positive or negative) of the number.</p>
-            </dd>
-          </dl>
-        </div>
+      <section className={styles.support}>
+        <h2>Poor browser support as of 12/13/2023</h2>
+        <section>
+          <h3>Sign-related functions</h3>
+          <div>
+            <dl>
+              <dt>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/abs">
+                  <code>abs()</code>
+                </a>
+              </dt>
+              <dd>
+                <p>Calculates the absolute value of a number.</p>
+              </dd>
+              <dt>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sign">
+                  <code>sign()</code>
+                </a>
+              </dt>
+              <dd>
+                <p>Calculates the sign (positive or negative) of the number.</p>
+              </dd>
+            </dl>
+          </div>
+        </section>
       </section>
     </>
   );

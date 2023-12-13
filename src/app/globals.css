@@ -1,8 +1,17 @@
 body {
+  margin: 0;
   padding: 1rem 2rem;
+  overflow-x: hidden;
 }
 
 code {
   background-color: lightgray;
   padding: 0.25rem 0.5rem;
+  display: block;
+  width: fit-content;
+}
+
+.line {
+  display: block;
+  margin-inline-start: 1rem;
 }
